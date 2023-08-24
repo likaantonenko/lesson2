@@ -1,4 +1,4 @@
--module(lesson2).
+-module(lesson2_task03).
 -export([element_at/2,element_at/3]).
 
 element_at(List,N)->element_at(List,N,1).
