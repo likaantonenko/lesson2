@@ -1,10 +1,6 @@
 -module(lesson2_task03).
--export([element_at/2,element_at/3]).
+-export([element_at/2]).
 
-element_at(List,N)->element_at(List,N,1).
-element_at([H|T],N,I)->
-     if 
-       I==N -> H;
-     true->
-       element_at(T,N,I+1)
-     end.
+element_at([H|_], 1) -> H;
+element_at([_|T], N) -> element_at(T, N-1);
+element_at(_,_) -> undefined.
