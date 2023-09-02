@@ -14,6 +14,6 @@ pack(List, Current, Result) ->
      if
        Hlist == Hcurrent ->
          pack(Tlist, [Hlist | Current], Result);
-       true ->
+     true ->
          pack(Tlist,[Hlist],[Current| Result])
-      end.   
+     end.   
